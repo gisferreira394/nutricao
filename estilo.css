@@ -1,0 +1,25 @@
+.btnbtn-outline-info{
+    background-color: #dab79f;
+}
+
+.login{
+font-family: cursive;
+}
+
+.form_login{
+    border: 30px solid transparent;
+font-size: 17px;
+border-image: url("img/borda.png") 150 round;
+text-align: center;
+max-width: 500px; 
+width:400px; 
+position:relative;
+ top:150px;
+height:230px; 
+margin: 0 auto;
+}
+
+.painel{
+    font-family: cursive;
+}
+
