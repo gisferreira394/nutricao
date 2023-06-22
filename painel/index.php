@@ -1,3 +1,7 @@
+
+
+<link rel="stylesheet" href="estilo.css" type="text/css">
+
 <?php 
 include"../includes/cabecalho.php";
 include"../includes/menu.php";
