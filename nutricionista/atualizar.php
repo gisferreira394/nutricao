@@ -3,8 +3,11 @@ include "../includes/conexao.php";
 
 $id = $_GET["codigo"];
 $nome = $_POST ["nome"];
+$especialidade = $_POST ["especialidade"];
+$cidade = $_POST ["cidade"];
+$estado = $_POST ["estado"];
 
-$sql = "update t_nutricionista set nome = '$nome' where codigo =$id";
+$sql = "update t_nutricionista set nome = '$nome', especialidade = '$especialidade', cidade = '$cidade' ,estado='$estado'  where codigo =$id";
 
 mysqli_query($conexao, $sql);
 mysqli_close($conexao);
