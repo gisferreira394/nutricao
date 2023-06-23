@@ -15,8 +15,7 @@ Módulo de nutricionista
 </p>
 
 <h2> Listagem de nutricionista </h2>
-
-<table class="table table-dark table-hover" border ="2">
+<table  class="table table-dark table-hover">
 
 <tr> 
 <td>Código</td>
@@ -34,7 +33,6 @@ $todos_os_nutricionistas = mysqli_query($conexao, $sql);
 while($um_nutricionista = mysqli_fetch_assoc($todos_os_nutricionistas)):
 
 ?>
-
 
 <tr>
     <td> <?php echo $um_nutricionista ['codigo'];?></td>
@@ -54,11 +52,12 @@ while($um_nutricionista = mysqli_fetch_assoc($todos_os_nutricionistas)):
         <img src="../img/deletar.png" width="15" title="Excluir funcionário"></a>
     </td>
 </tr>
-</table>
+
 <?php
 endwhile;
 ?>
-</table>
+
+</table>  
 
 <?php
 include "../includes/rodape.php";

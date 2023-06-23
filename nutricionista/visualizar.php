@@ -4,14 +4,15 @@ include "../includes/cabecalho.php";
 include "../includes/menu.php";
 include "../includes/conexao.php";
 
-$id = $_GET["codigo"];
+$codigo = $_GET["id"];
+
 $nome = "";
 $especialidade = "";
 $cidade = "";
 $estado= "";
 
 
-$sql = "select * from t_nutricionista where codigo = $id";
+$sql = "select * from t_nutricionista where codigo = $codigo";
 $todos_os_nutricionistas = mysqli_query($conexao, $sql);
 while ($um_nutricionista = mysqli_fetch_assoc($todos_os_nutricionistas)):
 
