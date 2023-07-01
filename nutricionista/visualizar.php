@@ -23,14 +23,16 @@ while ($um_nutricionista = mysqli_fetch_assoc($todos_os_nutricionistas)):
     
     endwhile
 ?>
-
+<div class="container-fluid">
 <h1> Ficha de nutricionistas</h1>
 
-Nome completo do nutricionista:  <?php echo $nome ?> <br>
-Especialidade:  <?php echo $especialidade ?> <br>
-Cidade: <?php echo $cidade ?> <br>
-Estado: <?php echo $estado ?> <br>
+<br>
 
+<span class="badge text-bg-dark">Nome completo do nutricionista:</span> <?php echo $nome ?><br>
+<span class="badge text-bg-dark">Especialidade: </span>  <?php echo $especialidade ?> <br>
+<span class="badge text-bg-dark">Cidade: </span> <?php echo $cidade ?> <br>
+<span class="badge text-bg-dark">Estado: </span> <?php echo $estado ?> <br>
+</div>
 <?php 
 mysqli_close($conexao);
 include "../includes/rodape.php";
