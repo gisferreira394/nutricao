@@ -35,7 +35,7 @@ include "../includes/menu.php";
 
 
 <div class="form-control">
-<select class="form-select" size="3" aria-label="size 3 select example">
+<select class="form-select" size="3" aria-label="size 3 select example" name="estado">
 
                     <option value="AC">AC</option>
                     <option value="AL">	AL</option>
